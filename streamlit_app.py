@@ -1,3 +1,7 @@
+import nltk
+nltk.download('punkt', quiet=True)
+
+
 import os, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
