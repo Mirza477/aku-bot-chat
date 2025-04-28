@@ -7,7 +7,7 @@ if SRC_DIR not in sys.path:
     sys.path.insert(0, SRC_DIR)
 
 import streamlit as st
-from src.chatbot_utils import chatbot_query
+from chatbot_utils import chatbot_query
 
 import streamlit as st
 import nltk
