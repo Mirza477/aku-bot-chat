@@ -1,8 +1,10 @@
 import os, sys
-THIS_DIR = os.path.dirname(os.path.abspath(__file__))
-if THIS_DIR not in sys.path:
-    sys.path.insert(0, THIS_DIR)
 
+# ─── add the repo’s src/ directory to Python’s search path ───
+HERE = os.path.dirname(os.path.abspath(__file__))
+SRC_DIR = os.path.join(HERE, "src")
+if SRC_DIR not in sys.path:
+    sys.path.insert(0, SRC_DIR)
 
 import streamlit as st
 from src.chatbot_utils import chatbot_query
