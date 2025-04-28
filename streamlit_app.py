@@ -1,12 +1,10 @@
 import os, sys
-
-# ─── ensure the repo root is on Python’s path ───
 HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
 import streamlit as st
-from chatbot_utils import chatbot_query
+from src.chatbot_utils import chatbot_query
 
 import streamlit as st
 import nltk
