@@ -130,4 +130,4 @@ Please follow these instructions when providing your response:
 
     # 8) Save and return
     conversation_history.append({"role": "assistant", "content": answer})
-    return {"response": answer, "results": []}
+    return {"response": answer, "results": []}  
